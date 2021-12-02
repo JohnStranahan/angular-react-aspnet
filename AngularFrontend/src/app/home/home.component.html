@@ -1,0 +1,76 @@
+﻿<head>
+<style>
+h2, p, button {
+  text-align: center;
+}
+table, th, td, button {
+  border: 1px solid black;
+  border-collapse: collapse;
+  text-align:center
+}
+table.center, button, form {
+  margin-left: auto; 
+  margin-right: auto;
+}
+html {
+  display: table;
+  margin: auto;
+}
+button {
+	display: block;
+	margin:auto;
+}
+.example-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 100%;
+}
+.example-full-width, form {
+  width: 25%;
+}
+</style>
+</head>
+
+<h2>Basic Table Test</h2>
+<p>Description here</p>
+
+<table class="center" style="width:90%">
+<tr>
+  <th>Var1</th>
+  <th>Var2</th> 
+  <th>Var3</th>
+</tr>
+<tr>
+  <td>10</td>
+  <td>20</td>
+  <td>30</td>
+</tr>
+<tr>
+  <td>40</td>
+  <td>50</td>
+  <td>60</td>
+</tr>
+<tr>
+  <td>70</td>
+  <td>80</td>
+  <td>90</td>
+</tr>
+</table>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<h2>Convert Fahrenheit to Celsius with MatLab DLL</h2>
+
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+      <input type="number" formControlName="temp" class="form-control" />
+  </div>
+  <div class="form-row">
+      <div class="form-group col">
+          <button [disabled]="loading" class="btn btn-primary">
+              <span *ngIf="loading" class="spinner-border spinner-border-sm mr-1"></span>
+              Calculate
+          </button>
+      </div>
+  </div>
+</form>
+
+<h2>Answer: {{totalAngularPackages}}</h2>
